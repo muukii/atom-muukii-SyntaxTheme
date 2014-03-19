@@ -1,3 +1,12 @@
+@import "syntax-variables";
+@muukii_darkGray :#1f2021;
+@muukii_purpleLight :#86729f;
+@muukii_purpleDark :#4c5187;
+@muukii_lightBlue :#75efff;
+@muukii_brightRed :#ff3b72;
+@muukii_orange :#ff6666;
+@muukii_yellow :#ffc259;
+
 .editor {
   .wrap-guide {
     background: rgba(255, 255, 255, 0.1);
@@ -8,20 +17,21 @@
   }
 
   &, .gutter {
-    background-color: #1f2021;
+    background-color: @muukii_darkGray;
     color: #F8F8F2;
   }
 
   &.is-focused .cursor {
-    border-color: #ff3b72;
+    border-color: @muukii_brightRed;
   }
 
   &.is-focused .selection .region {
-    background-color: #4c5187;
+    background-color: @muukii_brightRed;
+    opacity:0.3;
   }
 
   &.is-focused .line-number.cursor-line-no-selection {
-    background-color: #ff3b72;
+    background-color: @muukii_brightRed;
   }
 
   .invisible-character
@@ -30,91 +40,91 @@
   }
 
   .comment {
-    color: #4c5187;
+    color: @muukii_purpleDark;
   }
 
   .string {
-    color: #ff6666;
+    color: @muukii_orange;
   }
 
   .constant.numeric {
-    color: #86729f;
+    color: @muukii_purpleLight;
   }
 
   .constant.language {
-    color: #86729f;
+    color: @muukii_purpleLight;
   }
 
   .constant.character,
   .constant.other {
-    color: #86729f;
+    color: @muukii_purpleLight;
   }
 
   .variable {
   }
 
   .keyword {
-    color: #ff3b72;
+    color: @muukii_brightRed;
   }
 
   .storage {
-    color: #ff3b72;
+    color: @muukii_brightRed;
   }
 
   .storage.type {
     font-style: italic;
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .entity.name.class {
     text-decoration: underline;
-    color: #ff6666;
+    color: @muukii_orange;
   }
 
   .entity.other.inherited-class {
     font-style: italic;
     text-decoration: underline;
-    color: #ff6666;
+    color: @muukii_orange;
   }
 
   .entity.name.function {
-    color: #ff6666;
+    color: @muukii_orange;
   }
 
   .entity.name.instance {
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .variable.parameter {
     font-style: italic;
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .entity.name.tag {
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .entity.other.attribute-name {
-    color: #ff3b72;
+    color: @muukii_brightRed;
   }
 
   .support.function {
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .support.constant {
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .support.type,
   .support.class {
     font-style: italic;
-    color: #75efff;
+    color: @muukii_lightBlue;
   }
 
   .invalid {
     color: #F8F8F0;
-    background-color: #ff3b72;
+    background-color: @muukii_brightRed;
   }
 
   .invalid.deprecated {
@@ -126,4 +136,55 @@
   .class.jade {
     color: #AE81FF;
   }
+
+}
+
+.bracket-matcher {
+  border-bottom: 1px dotted;
+  border-bottom-color:@muukii_brightRed;
+  position: absolute;
+}
+
+//vim-mode
+.block-cursor(@visibility: visible) {
+  border: 0;
+  background-color: @muukii_brightRed;
+  visibility: @visibility;
+  opacity: 0.5;
+}
+
+.vim-mode.command-mode:not(.mini) {
+  .cursor, .cursor.blink-off {
+    .block-cursor(hidden);
+  }
+
+  &.editor.is-focused {
+    .cursor, .cursor.blink-off {
+      .block-cursor;
+    }
+  }
+}
+.command-mode-input .editor.mini {
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  font-weight: normal;
+  color: #aaaaaa;
+  text-shadow: 0 -1px 0 #333333;
+  // see also the commandModeInputViewFontSize setting.
+  line-height: 1.28;
+  cursor: default;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.command-mode-input .hidden-input {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 1px;
 }
