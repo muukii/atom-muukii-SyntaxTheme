@@ -1,0 +1,12 @@
+{
+  "name": "muukii",
+  "theme" : "syntax",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A short description of your package",
+  "repository": "https://github.com/muukii0803/atom-muukii-SyntaxTheme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
