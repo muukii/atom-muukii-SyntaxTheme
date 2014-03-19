@@ -1,0 +1,27 @@
+{
+  "name": "muukii",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A muukii theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muukii0803/muukii"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/muukii0803/muukii/issues"
+  },
+  "homepage": "http://www.muukii.me/",
+  "_id": "muukii@0.1.0",
+  "dist": {
+    "shasum": ""
+  },
+  "_resolved": "",
+  "_from": ""
+}
