@@ -1,0 +1,129 @@
+.editor {
+  .wrap-guide {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .indent-guide {
+    color: rgba(255, 255, 255, 0.15);
+  }
+
+  &, .gutter {
+    background-color: #1f2021;
+    color: #F8F8F2;
+  }
+
+  &.is-focused .cursor {
+    border-color: #ff3b72;
+  }
+
+  &.is-focused .selection .region {
+    background-color: #4c5187;
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection {
+    background-color: #ff3b72;
+  }
+
+  .invisible-character
+  {
+    color: rgba(215, 215, 215, 0.15);
+  }
+
+  .comment {
+    color: #4c5187;
+  }
+
+  .string {
+    color: #ff6666;
+  }
+
+  .constant.numeric {
+    color: #86729f;
+  }
+
+  .constant.language {
+    color: #86729f;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: #86729f;
+  }
+
+  .variable {
+  }
+
+  .keyword {
+    color: #ff3b72;
+  }
+
+  .storage {
+    color: #ff3b72;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: #75efff;
+  }
+
+  .entity.name.class {
+    text-decoration: underline;
+    color: #ff6666;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: #ff6666;
+  }
+
+  .entity.name.function {
+    color: #ff6666;
+  }
+
+  .entity.name.instance {
+    color: #75efff;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: #75efff;
+  }
+
+  .entity.name.tag {
+    color: #75efff;
+  }
+
+  .entity.other.attribute-name {
+    color: #ff3b72;
+  }
+
+  .support.function {
+    color: #75efff;
+  }
+
+  .support.constant {
+    color: #75efff;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: #75efff;
+  }
+
+  .invalid {
+    color: #F8F8F0;
+    background-color: #ff3b72;
+  }
+
+  .invalid.deprecated {
+    color: #F8F8F0;
+    background-color: #4c5187;
+  }
+
+  // Jade syntax
+  .class.jade {
+    color: #AE81FF;
+  }
+}
