@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # muukii package
 
 Inspired by Monokai
