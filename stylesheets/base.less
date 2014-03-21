@@ -96,15 +96,15 @@
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @yellow;
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @cyan;
   }
 
   &.other.unit {
-    color: @orange;
+    color: @yellow;
   }
 }
 
@@ -124,11 +124,11 @@
   }
 
   &.other.color {
-    color: @orange;
+    color: @yellow;
   }
 
   &.other.symbol {
-    color: @orange;
+    color: @cyan;
   }
 }
 
@@ -140,11 +140,11 @@
   }
 
   &.parameter.function {
-    color: @syntax-text-color;
+    color: @yellow;
   }
   &.other {
       &.dot-access{
-          color:@orange;
+          color:@cyan;
       }
   }
 }
@@ -155,7 +155,7 @@
 }
 
 .string {
-  color: @orange;
+  color: @yellow;
 
 
   &.regexp {
@@ -167,14 +167,14 @@
   }
 
   &.other.link {
-    color: @red;
+    color: @purple;
   }
 }
 
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @dark-purple;
     }
 
     &.string,
@@ -222,7 +222,7 @@
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @cyan;
   }
 
   &.name.class, &.name.type.class {
@@ -230,7 +230,7 @@
   }
 
   &.name.section {
-    color: @blue;
+    color: @cyan;
   }
 
   &.name.tag {
@@ -241,7 +241,7 @@
     color: @orange;
 
     &.id {
-      color: @blue;
+      color: @red;
     }
   }
 }
@@ -266,6 +266,9 @@
   &.separator {
     background-color: #373b41;
     color: @syntax-text-color;
+  }
+  &.arguments &.function-call{
+      color :@cyan;
   }
 }
 
