@@ -1,5 +1,4 @@
-# muukii package
-
+# muukii syntax color for Atom
 Inspired by Monokai
 
 ![ScreenShot](screenshot.png)
