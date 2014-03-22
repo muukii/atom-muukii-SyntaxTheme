@@ -1,7 +1,7 @@
 # muukii syntax color for Atom
 Inspired by Monokai
 
-![ScreenShot](screenshot.png)
+![ScreenShot](screenshot2.png)
 =======
 # Muukii theme
 
