@@ -5,7 +5,7 @@ Inspired by Monokai
 npm install muukii
 ```
 
-![ScreenShot](screenshot2.png)
+![ScreenShot](https://github.com/muukii0803/atom-muukii-SyntaxTheme/blob/master/screenshot2.png)
 =======
 # Muukii theme
 
